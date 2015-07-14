@@ -1,6 +1,7 @@
 <?php
 namespace HMR;
 //TODO: add sounds!
+//Special Thanks To @JackNoordhuis
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
