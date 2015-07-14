@@ -24,7 +24,7 @@ $this->getServer()->getPluginManager()->registerEvents($this,$this);
             $killer = $event->getEntity()->getLastDamageCause()->getDamager();
 $player->sendMessage(TextFormat::RED.$killer->getName() . TextFormat::GOLD." Killed you with " .TextFormat::LIGHT_PURPLE.$killer->getHealth() / 2 .TextFormat::RED." hearts left!");
             if($killer instanceof Player) {
- $killer->sendMessage("You Killed" .$player->getName()."!");
+ $killer->sendMessage("You Killed " .$player->getName()."!");
 				}
             }
         }
