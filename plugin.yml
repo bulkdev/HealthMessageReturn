@@ -1,0 +1,6 @@
+name: HealthMessageReturn
+main: HMR\Main
+version: "1.0"
+api: [1.0.0]
+load: POSTWORLD
+author: SavionLegendZzz
