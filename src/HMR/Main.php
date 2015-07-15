@@ -31,7 +31,7 @@ $this->getServer()->getPluginManager()->registerEvents($this,$this);
             $killer = $event->getEntity()->getLastDamageCause()->getDamager();
             $fizz = new FizzSound($killer);
             $bat = new BatSound($player);
-$player->sendMessage(TextFormat::RED.$killer->getName() . TextFormat::GOLD." Killed you with " .TextFormat::LIGHT_PURPLE.$killer->getHealth() / 2.TextFormat::RED." hearts left and while using ".TextFormat::BLUE.$killer->getInventory()->getItemInHand().TextFormat::RESET."!");
+$player->sendMessage(TextFormat::RED.$killer->getName() . TextFormat::GOLD." Killed you with " .TextFormat::LIGHT_PURPLE.$killer->getHealth().TextFormat::RED." hearts left and while using ".TextFormat::BLUE.$killer->getInventory()->getItemInHand()."!");
 $player->getLevel()->addSound($bat);
 if($killer instanceof Player) {
  $killer->sendMessage(TextFormat::GREEN."You Killed ".$player->getName()."!");
